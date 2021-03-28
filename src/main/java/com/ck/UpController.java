@@ -57,4 +57,12 @@ public class UpController {
         mv.setViewName("success");
         return mv;
     }
+    @RequestMapping("/testmodify")
+    public ModelAndView testmodify( String username){
+        System.out.println(username);
+        System.out.println(12);
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("success");
+        return mv;
+    }
 }
